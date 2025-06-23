@@ -12,7 +12,6 @@ export const AboutMe = () => {
   // Visual Styles: bg-*, border-*, shadow-*, ring-*, outline-*
   // Interactive states: hover:*, focus:*, active:*, disabled:*
 
-
   return (
     <div className="text-teal-950">
       <h1 className="text-2xl">
@@ -33,10 +32,8 @@ export const AboutMe = () => {
           : `Hola, soy un desarrollador de software con más de 1 año de experiencia en tecnologías como JavaScript y React. También he construido proyectos personales donde he utilizado tecnologías como TypeScript | Node.Js | Express | SQL | MongoDB | Redux Toolkit | Tailwind | Bootstrap y otras.
 
         Estoy buscando una oportunidad para desarrollarme profesionalmente como ingeniero de software y contribuir positivamente a los proyectos en los que participo. Mientras tanto, sigo aprendiendo y practicando, desarrollando aplicaciones que mejoran mis conocimientos.
-        
-        Como ingeniero industrial graduado del Instituto Tecnológico de
-        Hermosillo, mi formación académica y experiencia profesional se centran en la mejora continua y la optimización de procesos. Por lo tanto, siempre busco contribuir activamente al desarrollo de soluciones tecnológicas que impacten positivamente en la eficiencia operativa y la experiencia del
-        cliente.`}
+
+        Como ingeniero industrial graduado del Instituto Tecnológico de Hermosillo, mi formación académica y experiencia profesional se centran en la mejora continua y la optimización de procesos. Por lo tanto, siempre busco contribuir activamente al desarrollo de soluciones tecnológicas que impacten positivamente en la eficiencia operativa y la experiencia del cliente.`}
       </p>
       <h2
         className="
