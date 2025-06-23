@@ -18,6 +18,9 @@ export const Navbar = () => {
   const dispatch = useDispatch();
 
   const { pathname } = useLocation();
+  // How to put a min-h minus navbar height in tailwindcss?
+  // You can use the `min-h-screen` class to set the minimum height of an element to the full height of the viewport, minus the height of the navbar. To achieve this, you can use a combination of `min-h-screen` and a custom height for the navbar.
+  // For example, if your navbar has a height of 60px, you can set the min-height of the main content to `min-h-[calc(100vh-60px)]`.
   return (
     <nav
       className={`flex sm:justify-between ${
