@@ -10,16 +10,15 @@ export const Education = () => {
         {language === "en" ? "My education" : "Educación"}
       </h1>
       <div className="flex flex-col mb-5">
-        <span className="flex items-center gap-2">
-          <p className="font-bold text-teal-900">
-            {language === "en"
-              ? "JavaScript Developer"
-              : "Desarrollador JavaScript"}
-          </p>{" "}
-          <p className="text-teal-900">
-            {language === "en" ? "at freeCodeCamp" : "en freeCodeCamp"}
+        {language === "en" ? (
+          <p className=" text-teal-900">
+            <strong>JavaScript Developer</strong> at freeCodeCamp
           </p>
-        </span>
+        ) : (
+          <p className=" text-teal-900">
+            <strong>Desarrollador JavaScript</strong> en freeCodeCamp
+          </p>
+        )}
         <p className="text-xs text-neutral-600 mb-1">
           {language === "en"
             ? "December 2022 - November 2024 [Hermosillo, Sonora, Mex.]"
@@ -27,18 +26,17 @@ export const Education = () => {
         </p>
       </div>
       <div className="flex flex-col mb-5">
-        <span className="flex items-center gap-2">
-          <p className="font-bold text-teal-900">
-            {language === "en"
-              ? "Industrial engineering"
-              : "Ingeniería industrial"}
-          </p>{" "}
+        {language === "en" ? (
           <p className="text-teal-900">
-            {language === "en"
-              ? "at Hermosillo Institute of Technology"
-              : "en Instituto Tecnológico de Hermosillo"}
+            <strong>Industrial engineering</strong> at Hermosillo Institute of
+            Technology
           </p>
-        </span>
+        ) : (
+          <p className="text-teal-900">
+            <strong>Ingeniería industrial</strong> en Instituto Tecnológico de
+            Hermosillo
+          </p>
+        )}
         <p className="text-xs text-neutral-600 mb-1">
           {language === "en"
             ? "2011 - 2017 [Hermosillo, Sonora, Mex.]"

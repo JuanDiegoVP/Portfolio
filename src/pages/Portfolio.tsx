@@ -5,6 +5,7 @@ import { Project } from "../components/Project";
 import { ecommerceInfo } from "../lib/ProjectsInfo";
 import { useSelector } from "react-redux";
 import { RootState } from "../main";
+import { CiMail } from "react-icons/ci";
 
 // Layout & Container Classes: container, mx-auto, flex, grid, columns-*, space-*, gap-*, order-*
 // Spacing & Positioning Classes: p-*, m-*, mt-*, mb-*, ml-*, mr-*, absolute, relative, fixed, sticky, md:px-20, lg:px-30, overflow-hidden
@@ -50,7 +51,7 @@ export const Portfolio = () => {
             py-2 
             text-xl md:text-3xl xs:text-2xl"
           >
-            {language === "en" 
+            {language === "en"
               ? "React JS Developer"
               : "Desarrollador React JS"}
           </h3>
@@ -89,6 +90,17 @@ export const Portfolio = () => {
             </a>
           </ul>
         </div>
+        <span
+          className="
+                    flex items-center gap-1 
+                    mt-2
+                "
+        >
+          <CiMail className="text-xl text-teal-600" />
+          <p className="text-md text-teal-900">
+            ing.juandiego.vargas@gmail.com
+          </p>
+        </span>
       </section>
       <section>
         <div>

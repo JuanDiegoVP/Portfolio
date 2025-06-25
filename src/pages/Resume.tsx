@@ -57,7 +57,7 @@ export const Resume = () => {
           {language === "en" ? "Education" : "Educación"}
         </button>
       </div>
-      <div className="max-h-[500px] overflow-auto flex-1">
+      <div className="h-[calc(100vh-150px)] overflow-auto flex-1 bg-neutral-100 p-2 rounded-md shadow-lg">
         {activeSection === "AboutMe" ? (
           <AboutMe />
         ) : activeSection === "Experience" ? (

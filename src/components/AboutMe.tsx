@@ -1,4 +1,3 @@
-import { CiMail } from "react-icons/ci";
 import { useSelector } from "react-redux";
 import { RootState } from "../main";
 
@@ -35,23 +34,6 @@ export const AboutMe = () => {
 
         Como ingeniero industrial graduado del Instituto Tecnológico de Hermosillo, mi formación académica y experiencia profesional se centran en la mejora continua y la optimización de procesos. Por lo tanto, siempre busco contribuir activamente al desarrollo de soluciones tecnológicas que impacten positivamente en la eficiencia operativa y la experiencia del cliente.`}
       </p>
-      <h2
-        className="
-            mt-7 
-            text-xl
-          "
-      >
-        {language === "en" ? "Contact" : "Contacto"}
-      </h2>
-      <span
-        className="
-          flex items-center gap-1 
-          mt-2
-      "
-      >
-        <CiMail className="text-xl text-teal-600" />
-        <p className="text-md text-teal-900">ing.juandiego.vargas@gmail.com</p>
-      </span>
     </div>
   );
 };
