@@ -4,17 +4,10 @@ import { RootState } from "../main";
 export const AboutMe = () => {
   const { language } = useSelector((state: RootState) => state.language);
 
-  // Layout & Container Classes: container, mx-auto, flex, grid, columns-*, space-*, gap-*, order-*
-  // Spacing & Positioning Classes: p-*, m-*, mt-*, mb-*, ml-*, mr-*, absolute, relative, fixed, sticky
-  // Size & Dimension Classes: w-*, h-*, min-w-*, min-h-*, max-w-*, max-h-*,
-  // Typography Classes: text-*, font-*, leading-*, tracking-*, pre-line, whitespace-*, text-ellipsis, text-overflow-*
-  // Visual Styles: bg-*, border-*, shadow-*, ring-*, outline-*
-  // Interactive states: hover:*, focus:*, active:*, disabled:*
-
   return (
     <div className="text-teal-950">
       <h1 className="text-2xl">
-        {language === "en" ? "About me" : "Sobre mí"}
+        {language === "en" ? "Summary" : "Resumen"}
       </h1>
       <p
         className="
@@ -23,16 +16,8 @@ export const AboutMe = () => {
         "
       >
         {language === "en"
-          ? `Hi, I am a software developer with more than 1 year of experience in technologies such as JavaScript and React. I have also built personal projects where I have used technologies such as TypeScript | Node.Js | Express | SQL | MongoDB | Redux Toolkit | Tailwind | Bootstrap and others.
-        
-        I am looking for an opportunity to develop professionally as a software engineer and contribute positively to the projects I participate in. In the meantime, I keep learning and practicing, developing applications that improve my knowledge. 
-
-        As an industrial engineer graduated from the Hermosillo Institute of Technology, my academic training and professional experience focus on continuous improvement and process optimization. Therefore, I always seek to actively contribute to the development of technological solutions that positively impact operational efficiency and customer experience.`
-          : `Hola, soy un desarrollador de software con más de 1 año de experiencia en tecnologías como JavaScript y React. También he construido proyectos personales donde he utilizado tecnologías como TypeScript | Node.Js | Express | SQL | MongoDB | Redux Toolkit | Tailwind | Bootstrap y otras.
-
-        Estoy buscando una oportunidad para desarrollarme profesionalmente como ingeniero de software y contribuir positivamente a los proyectos en los que participo. Mientras tanto, sigo aprendiendo y practicando, desarrollando aplicaciones que mejoran mis conocimientos.
-
-        Como ingeniero industrial graduado del Instituto Tecnológico de Hermosillo, mi formación académica y experiencia profesional se centran en la mejora continua y la optimización de procesos. Por lo tanto, siempre busco contribuir activamente al desarrollo de soluciones tecnológicas que impacten positivamente en la eficiencia operativa y la experiencia del cliente.`}
+          ? `Full Stack Developer with hands-on experience building and integrating REST APIs, designing modular backend architectures, and developing frontend components in React. Background in Industrial Engineering enables a strong ability to analyze business workflows, identify operational inefficiencies, and translate them into scalable technical solutions. Currently expanding cloud expertise through AWS re/Start (Encora). Motivated to contribute to fast-paced environments by building reliable and adaptable full stack solutions.`
+          : `Desarrollador Full Stack con experiencia práctica en la construcción e integración de APIs REST, diseño de arquitecturas backend modulares y desarrollo de componentes frontend en React. Mi formación en Ingeniería Industrial me permite analizar flujos de trabajo empresariales, identificar ineficiencias operativas y traducirlas en soluciones técnicas escalables. Actualmente ampliando conocimientos en la nube a través de AWS re/Start (Encora). Motivado para contribuir en entornos dinámicos mediante la creación de soluciones full stack fiables y adaptables.`}
       </p>
     </div>
   );

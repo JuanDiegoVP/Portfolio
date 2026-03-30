@@ -7,17 +7,25 @@ import { useSelector } from "react-redux";
 import { RootState } from "../main";
 import { CiMail } from "react-icons/ci";
 
-// Layout & Container Classes: container, mx-auto, flex, grid, columns-*, space-*, gap-*, order-*
-// Spacing & Positioning Classes: p-*, m-*, mt-*, mb-*, ml-*, mr-*, absolute, relative, fixed, sticky, md:px-20, lg:px-30, overflow-hidden
-// Size & Dimension Classes: w-*, h-*, min-w-*, min-h-*, max-w-*, max-h-*,
-// Typography Classes: text-*, font-*, leading-*, tracking-*, pre-line, whitespace-*, text-ellipsis, text-overflow-*, text-center, text-gray-800
-// Visual Styles: bg-*, border-*, shadow-*, ring-*, outline-*
-// Interactive states: hover:*, focus:*, active:*, disabled:*
-
-// Where does the text-gray-500 class fall in the above categories?
-
 export const Portfolio = () => {
   const { language } = useSelector((state: RootState) => state.language);
+
+  const a = [1, 2, 3, 4, 1, 2, 3];
+
+  const numbers = a.filter((item, index) => a.indexOf(item) === index);
+  console.log(numbers); // [1, 2, 3, 4]
+  let repetitions = new Array(numbers.length).fill(0);
+
+  numbers.map((item) => {
+    a.map((el) => {
+      if (item == el) {
+        repetitions[numbers.indexOf(item)]++;
+      }
+    });
+  });
+  const uniqueRepetitions = repetitions.indexOf(1);
+  
+  
 
   return (
     <main
