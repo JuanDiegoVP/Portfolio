@@ -29,7 +29,7 @@ export const Navbar = () => {
         <h1
           className={`text-xl font-bold bg-gradient-to-r from-cyan-700 to-teal-800 bg-clip-text text-transparent sm:block hidden`}
         >
-          DiegoVargas
+          JuanDiegoVargas
         </h1>
       )}
       {pathname === "/resume" && (
@@ -37,7 +37,7 @@ export const Navbar = () => {
           <h1
             className={`text-xl font-bold bg-gradient-to-r from-cyan-700 to-teal-800 bg-clip-text text-transparent sm:block hidden`}
           >
-            DiegoVargas
+            JuanDiegoVargas
           </h1>
           <button
             onClick={() => setToggleMenu((prev) => !prev)}

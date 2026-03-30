@@ -22,8 +22,10 @@ import markdownPreviewerPrevi from "../assets/markdownPreviewerPrevi.png";
 import randomQuoteMachine from "../assets/randomQuoteMachine.png";
 import randomQuoteMachineAbu from "../assets/randomQuoteMachineAbu.png";
 import randomQuoteMachineAris from "../assets/randomQuoteMachineAris.png";
+import orderhubCustomer from "../assets/orderhubCustomer.png";
+import orderhubAdmin from "../assets/orderhubAdmin.png";
 
-import { FaNodeJs, FaReact } from "react-icons/fa";
+import { FaNodeJs, FaReact, FaAws, FaDocker, FaPython } from "react-icons/fa";
 import {
   SiBootstrap,
   SiExpress,
@@ -31,6 +33,15 @@ import {
   SiRedux,
   SiTailwindcss,
   SiTypescript,
+  SiAwslambda,
+  SiAmazondynamodb,
+  SiAmazons3,
+  SiMaterialdesign,
+  SiTerraform,
+  SiGithubactions,
+  SiCypress,
+  SiPostman,
+  SiJupyter,
 } from "react-icons/si";
 
 export const ecommerceInfo = {
@@ -241,5 +252,76 @@ export const ecommerceInfo = {
     descriptionSpanish:
       "Una aplicación de generador de citas aleatorias que desarrollé como parte de un desafío de freeCodeCamp. Muestra una cita aleatoria cada vez que el usuario hace clic en un botón, proporcionando inspiración y motivación. El proyecto está construido con React y Bootstrap, asegurando una interfaz receptiva y visualmente atractiva.",
     images: [randomQuoteMachine, randomQuoteMachineAbu, randomQuoteMachineAris],
+  },
+  orderHub: {
+    titleEnglish: "OrderHub",
+    titleSpanish: "OrderHub",
+    icons: [
+      {
+        icon: FaReact,
+        color: "#61DAFB",
+      },
+      {
+        icon: FaNodeJs,
+        color: "#68A063",
+      },
+      {
+        icon: SiExpress,
+        color: "#000000",
+      },
+      {
+        icon: SiMaterialdesign,
+        color: "#0081CB",
+      },
+      {
+        icon: FaAws,
+        color: "#FF9900",
+      },
+      {
+        icon: SiAwslambda,
+        color: "#FF9900",
+      },
+      {
+        icon: SiAmazondynamodb,
+        color: "#4053D6",
+      },
+      {
+        icon: SiAmazons3,
+        color: "#569A31",
+      },
+      {
+        icon: SiTerraform,
+        color: "#7B42BC",
+      },
+      {
+        icon: FaDocker,
+        color: "#2496ED",
+      },
+      {
+        icon: SiGithubactions,
+        color: "#2088FF",
+      },
+      {
+        icon: SiPostman,
+        color: "#FF6C37",
+      },
+      {
+        icon: SiCypress,
+        color: "#17202C",
+      },
+      {
+        icon: FaPython,
+        color: "#3776AB",
+      },
+      {
+        icon: SiJupyter,
+        color: "#F37626",
+      },
+    ],
+    descriptionEnglish:
+      "A full-stack web application for order management currently in development. Designed and developed a modular REST API using Node.js and Express to handle order management, request validation, and business logic. Implemented CRUD operations and lifecycle management, improving data organization and system reliability. Structured the application following separation of concerns to improve maintainability and scalability. Tested API endpoints using Postman and curl to ensure correct functionality and proper error handling. Designed frontend components using React to support user interaction (in progress). Managed source control using Git with a structured workflow (main/develop/feature branches).",
+    descriptionSpanish:
+      "Una aplicación web full-stack para gestión de pedidos actualmente en desarrollo. Diseñé y desarrollé una API REST modular usando Node.js y Express para manejar la gestión de pedidos, validación de solicitudes y lógica de negocio. Implementé operaciones CRUD y gestión del ciclo de vida, mejorando la organización de datos y la confiabilidad del sistema. Estructuré la aplicación siguiendo la separación de responsabilidades para mejorar la mantenibilidad y escalabilidad. Probé los endpoints de la API usando Postman y curl para asegurar la funcionalidad correcta y el manejo adecuado de errores. Diseñé componentes frontend usando React para apoyar la interacción del usuario (en progreso). Gestioné el control de versiones usando Git con un flujo de trabajo estructurado (ramas main/develop/feature).",
+    images: [orderhubCustomer, orderhubAdmin],
   },
 };

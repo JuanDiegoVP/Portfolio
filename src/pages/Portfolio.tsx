@@ -48,8 +48,8 @@ export const Portfolio = () => {
             text-4xl text-teal-600 font-medium lg:text-7xl md:text-6xl xs:text-4xl"
           >
             {language === "en"
-              ? "Hi, I'm Diego Vargas"
-              : "Hola, soy Diego Vargas"}
+              ? "Hi, I'm Juan Diego Vargas"
+              : "Hola, soy Juan Diego Vargas"}
           </h2>
           <h3
             className="
@@ -122,6 +122,7 @@ export const Portfolio = () => {
               : "Estos son algunos de los proyectos que he desarrollado utilizando diversas tecnologías. Cada proyecto refleja mis habilidades y pasión por el desarrollo de software. ¡Espero que los encuentres interesantes!"}
           </p>
         </div>
+        <Project projectInfo={ecommerceInfo.orderHub} />
         <Project projectInfo={ecommerceInfo.ecommerceProject} />
         <Project projectInfo={ecommerceInfo.mernStackProject} />
         <Project projectInfo={ecommerceInfo.todoApp} />

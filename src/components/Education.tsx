@@ -10,38 +10,49 @@ export const Education = () => {
         {language === "en" ? "My education" : "Educación"}
       </h1>
       <div className="flex flex-col mb-5">
-        {language === "en" ? (
-          <p className=" text-teal-900">
-            <strong>JavaScript Developer</strong> at freeCodeCamp
-          </p>
-        ) : (
-          <p className=" text-teal-900">
-            <strong>Desarrollador JavaScript</strong> en freeCodeCamp
-          </p>
-        )}
+        <p className="text-teal-900">
+          <strong>AWS re/Start Program</strong>
+          {language === "en"
+            ? " — Cloud Computing Training (Encora)"
+            : " — Capacitación en Computación en la Nube (Encora)"}
+        </p>
         <p className="text-xs text-neutral-600 mb-1">
           {language === "en"
-            ? "December 2022 - November 2024 [Hermosillo, Sonora, Mex.]"
-            : "Diciembre 2022 - Noviembre 2024 [Hermosillo, Sonora, Mex.]"}
+            ? "Jan 2026 - Present"
+            : "Ene 2026 - Presente"}
         </p>
+        <div>
+          <ol className="list-disc ml-8 text-neutral-600 text-xs">
+            <li>
+              {language === "en"
+                ? "Completing hands-on training in cloud fundamentals: EC2, IAM, VPC, S3, networking, security, and DevOps basics."
+                : "Completando capacitación práctica en fundamentos de la nube: EC2, IAM, VPC, S3, redes, seguridad y conceptos básicos de DevOps."}
+            </li>
+            <li>
+              {language === "en"
+                ? "Developing practical scripting skills in Python for cloud automation tasks."
+                : "Desarrollando habilidades prácticas de scripting en Python para tareas de automatización en la nube."}
+            </li>
+          </ol>
+        </div>
       </div>
       <div className="flex flex-col mb-5">
-        {language === "en" ? (
-          <p className="text-teal-900">
-            <strong>Industrial engineering</strong> at Hermosillo Institute of
-            Technology
-          </p>
-        ) : (
-          <p className="text-teal-900">
-            <strong>Ingeniería industrial</strong> en Instituto Tecnológico de
-            Hermosillo
-          </p>
-        )}
-        <p className="text-xs text-neutral-600 mb-1">
+        <p className="text-teal-900">
+          <strong>B.Sc. Industrial Engineering</strong>
           {language === "en"
-            ? "2011 - 2017 [Hermosillo, Sonora, Mex.]"
-            : "2011 - 2017 [Hermosillo, Sonora, Mex.]"}
+            ? " — Hermosillo Institute of Technology"
+            : " — Instituto Tecnológico de Hermosillo"}
         </p>
+        <p className="text-xs text-neutral-600 mb-1">2011 - 2017</p>
+        <div>
+          <ol className="list-disc ml-8 text-neutral-600 text-xs">
+            <li>
+              {language === "en"
+                ? "Foundation in process analysis, systems optimization, operations management, and data-driven decision making — directly applicable to understanding and translating client business processes into technical implementations."
+                : "Fundamentos en análisis de procesos, optimización de sistemas, gestión de operaciones y toma de decisiones basada en datos — directamente aplicables para comprender y traducir los procesos de negocio de los clientes en implementaciones técnicas."}
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
   );
