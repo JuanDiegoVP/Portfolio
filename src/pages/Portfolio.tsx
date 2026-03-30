@@ -14,7 +14,7 @@ export const Portfolio = () => {
 
   const numbers = a.filter((item, index) => a.indexOf(item) === index);
   console.log(numbers); // [1, 2, 3, 4]
-  let repetitions = new Array(numbers.length).fill(0);
+  const repetitions = new Array(numbers.length).fill(0);
 
   numbers.map((item) => {
     a.map((el) => {
@@ -23,9 +23,6 @@ export const Portfolio = () => {
       }
     });
   });
-  const uniqueRepetitions = repetitions.indexOf(1);
-  
-  
 
   return (
     <main
