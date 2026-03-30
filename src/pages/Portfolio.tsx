@@ -44,21 +44,17 @@ export const Portfolio = () => {
         >
           <h2
             className="
-            xs:py-4
+            xs:py-2
             text-4xl text-teal-600 font-medium lg:text-7xl md:text-6xl xs:text-4xl"
           >
             {language === "en"
               ? "Hi, I'm Juan Diego Vargas"
               : "Hola, soy Juan Diego Vargas"}
           </h2>
-          <h3
-            className="
-            py-2 
-            text-xl md:text-3xl xs:text-2xl"
-          >
+          <h3 className="mt-2 text-2xl md:text-3xl font-semibold text-gray-900 tracking-wide">
             {language === "en"
-              ? "React JS Developer"
-              : "Desarrollador React JS"}
+              ? "Full Stack Web Developer"
+              : "Desarrollador Web Full Stack"}
           </h3>
           <p
             className="
